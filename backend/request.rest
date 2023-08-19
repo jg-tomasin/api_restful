@@ -1,0 +1,94 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+
+{
+    "name":"Algum Serviço 2",
+    "description": "Alguma Descrição",
+    "price": 1600,
+    "image" : "https://www.istockphoto.com/br/foto/importantes-data-gm504569473-44393524"
+}
+
+###
+
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/64e046d6a63958431a8e03ac
+###
+DELETE  http://localhost:3000/api/services/64dfbc22af4b3f3e83a3c739
+
+
+###
+PUT http://localhost:3000/api/services/64e046d6a63958431a8e03ac
+Content-Type: application/json
+
+
+{
+    "name":" TESTE ATUALIZAÇÃO",
+    "description": "Alguma Descrição",
+    "price": 2500,
+    "image" : "https://www.istockphoto.com/br/foto/importantes-data-gm504569473-44393524"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+        {
+            "title": "Meu Evento 2",
+            "author": "JG",
+            "description": "Uma Festa de aniversario",
+            "budget": 9000,
+            "image" : "https://www.istockphoto.com/br/foto/importantes-data-gm504569473-44393524",
+            "services": [
+            {
+            "name":"Algum Serviço 1",
+            "description": "Alguma Descrição",
+            "price": 3000,
+            "image" : "https://www.istockphoto.com/br/foto/importantes-data-gm504569473-44393524"
+            },
+            {
+            "name":"Algum Serviço 2",
+            "description": "Alguma Descrição",
+            "price": 1600,
+            "image" : "https://www.istockphoto.com/br/foto/importantes-data-gm504569473-44393524"
+            }
+            ]
+        }
+
+###
+
+
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/64dfd072ff5793dcb423dbee
+
+###
+DELETE  http://localhost:3000/api/services/64dfbbfaaf4b3f3e83a3c737
+###
+PUT http://localhost:3000/api/parties/64dfd185ff5793dcb423dbf0
+Content-Type: application/json
+
+        {
+            "title": "Meu Evento 2",
+            "author": "JG",
+            "description": "Uma Festa de aniversario",
+            "budget": 90000,
+            "image" : "https://www.istockphoto.com/br/foto/importantes-data-gm504569473-44393524",
+            "services": [
+            {
+            "name":"Algum Serviço 1",
+            "description": "Alguma Descrição",
+            "price": 40000,
+            "image" : "https://www.istockphoto.com/br/foto/importantes-data-gm504569473-44393524"
+            },
+            {
+            "name":"Algum Serviço 2",
+            "description": "Alguma Descrição",
+            "price": 1600,
+            "image" : "https://www.istockphoto.com/br/foto/importantes-data-gm504569473-44393524"
+            }
+            ]
+        }
